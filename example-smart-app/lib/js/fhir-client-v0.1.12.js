@@ -17417,11 +17417,11 @@ BBClient.authorize = function(params, errback){
       "response_type="+encodeURIComponent(params.response_type)+"&"+
       "scope="+encodeURIComponent(client.scope)+"&"+
       "redirect_uri="+encodeURIComponent(client.redirect_uri)+"&"+
+      "state="+encodeURIComponent(state)+"&"+
+      "aud="+encodeURIComponent(params.server)+"&"+
 	"cerner_Study_Identifier=+encodeURIComponent('GID123')"+"&"+
 	"cerner_View_Mode=+encodeURIComponent('False')"+"&"+
-	"cerner_Accession=+encodeURIComponent('000CV2023001234')"+"&"+
-      "state="+encodeURIComponent(state)+"&"+
-      "aud="+encodeURIComponent(params.server);
+	"cerner_Accession=+encodeURIComponent('000CV2023001234');
     
     if (typeof client.launch !== 'undefined' && client.launch) {
        redirect_to += "&launch="+encodeURIComponent(client.launch);
