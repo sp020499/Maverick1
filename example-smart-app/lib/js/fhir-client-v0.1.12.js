@@ -17418,10 +17418,7 @@ BBClient.authorize = function(params, errback){
       "scope="+encodeURIComponent(client.scope)+"&"+
       "redirect_uri="+encodeURIComponent(client.redirect_uri)+"&"+
       "state="+encodeURIComponent(state)+"&"+
-      "aud="+encodeURIComponent(params.server)+"&"+
-	"cerner_StudyIdentifier="+encodeURIComponent('UID123')+"&"+
-	"cerner_View_Mode="+encodeURIComponent('False')+"&"+
-	"cerner_Accession="+encodeURIComponent('000CV2023001234')";
+      "aud="+encodeURIComponent(params.server);
     
     if (typeof client.launch !== 'undefined' && client.launch) {
        redirect_to += "&launch="+encodeURIComponent(client.launch);
