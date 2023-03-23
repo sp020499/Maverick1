@@ -17417,6 +17417,9 @@ BBClient.authorize = function(params, errback){
       "response_type="+encodeURIComponent(params.response_type)+"&"+
       "scope="+encodeURIComponent(client.scope)+"&"+
       "redirect_uri="+encodeURIComponent(client.redirect_uri)+"&"+
+	"cerner_Study_Identifier=+encodeURIComponent('GID123')"+"&"+
+	"cerner_View_Mode=+encodeURIComponent('False')"+"&"+
+	"cerner_Accession=+encodeURIComponent('000CV2023001234')"+"&"+
       "state="+encodeURIComponent(state)+"&"+
       "aud="+encodeURIComponent(params.server);
     
