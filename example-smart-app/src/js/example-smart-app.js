@@ -33,6 +33,7 @@
 
           if (typeof patient.name[0] !== 'undefined') {
             fname = patient.name[0].given.join(' ');
+            lname = patient.name[0].family.join(' ');
             if(Array.isArray(patient.name[0].family)){
               lname = patient.name[0].family.join(' ');
             }
